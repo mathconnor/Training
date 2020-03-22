@@ -23,6 +23,7 @@ class CPU():
 
 	def tick(self):
 		# Fetch
+		
 		self.instruction = (self.system_memory.read( self.pc ) << 8) | self.system_memory.read( self.pc + 1 )
 
 		# Decode / Execute
